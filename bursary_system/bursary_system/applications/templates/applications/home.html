@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">Welcome to the Bursary Application System</h2>
+                <p class="card-text">Please select your student type:</p>
+                <a href="{% url 'apply_bursary' %}?student_type=highschool" class="btn btn-primary mr-3">High School Student</a>
+                <a href="{% url 'apply_bursary' %}?student_type=college" class="btn btn-primary mr-3">College Student</a>
+                <a href="{% url 'apply_bursary' %}?student_type=university" class="btn btn-primary">University Student</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies (Optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

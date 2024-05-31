@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ng-CDF Dashboard</title>
+    <!-- Add any necessary CSS or JavaScript libraries here -->
+</head>
+<body>
+    <h1>Ng-CDF Dashboard</h1>
+
+    <!-- Application List -->
+    <div id="application-list">
+        <h2>Applications</h2>
+        <ul>
+            {% for application in applications %}
+                <li>
+                    <h3>{{ application.applicant_name }}</h3>
+                    <p>Status: {{ application.status }}</p>
+                    <p>Amount Requested: {{ application.amount_requested }}</p>
+                    <!-- Add more details as needed -->
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

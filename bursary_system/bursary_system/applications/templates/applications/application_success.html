@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Application Submitted</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Thank you for your application!</h2>
+        <p>Your application has been submitted successfully.</p>
+        <!-- Convert the link into a button with Bootstrap styling -->
+        <form action="{% url 'check_allocation' 'highschool' %}"> <!-- Provide the default institution type -->
+            <button type="submit" class="btn btn-primary">Check Allocation</button>
+        </form>
+    </div>
+
+    <!-- Add Bootstrap JS (optional, if needed) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

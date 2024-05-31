@@ -1,0 +1,41 @@
+<!-- bursary_application_form.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bursary Application Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bursary Application Form</h1>
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                {{ form.first_name.label_tag }} {{ form.first_name }}
+            </div>
+            <div class="form-group">
+                {{ form.last_name.label_tag }} {{ form.last_name }}
+            </div>
+            <div class="form-group">
+                {{ form.email.label_tag }} {{ form.email }}
+            </div>
+            <div class="form-group">
+                {{ form.phone_number.label_tag }} {{ form.phone_number }}
+            </div>
+            <div class="form-group">
+                {{ form.address.label_tag }} {{ form.address }}
+            </div>
+            <div class="form-group">
+                {{ form.date_of_birth.label_tag }} {{ form.date_of_birth }}
+            </div>
+            <div class="form-group">
+                {{ form.bursary_details.label_tag }} {{ form.bursary_details }}
+            </div>
+            <div class="form-group">
+                {{ form.institution.label_tag }} {{ form.institution }}  <!-- Add this line -->
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
